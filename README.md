@@ -21,6 +21,11 @@ Edit _CMakeLists.txt_:
   add_executable(motor_control motor_control.c library/src/bootloader.c)
   ```
 
+Include the header file.
+```C
+#include "bootloader.h"
+```
+
 Call the function to enable the ISR.
 ```C
 #define RESET_PIN 16
